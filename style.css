@@ -86,11 +86,18 @@ section {
   height: 80vh;
 }
 
-.section__pic-container {
+.section_pic-container {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
+  
+}
+.profile-pic {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .section__text {
@@ -312,4 +319,39 @@ article .icon {
 }
 .btn-small{
   padding:0.5rem;
+}
+
+/* Contact */
+
+#contact .details-container {
+  width: 400px;         /* you can adjust this */
+  margin: 2rem auto;     /* centers the box and adds top spacing */
+}
+
+#contact .details-container p {
+  font-size: 1.25rem;
+}
+
+#contact .details-container a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact .details-container a:hover {
+  text-decoration: underline;
+}
+.contact-box {
+  display: flex;
+  align-items: center;   /* Vertically centers the icon and text */
+  justify-content: center; /* centers the whole block's content */
+  gap: 1rem;              /* space between icon and text */
+}
+.email-icon {
+  height: 2.5rem;
+  width: auto;
+}
+.contact-box p {
+  margin-top: 15px;
+  display: inline-block;       /* Makes margin-top work visually */
 }
